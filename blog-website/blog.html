@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PWSkills Blog - Create Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-blue-600 py-4 mb-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl text-white font-semibold">PWSkills Blog</h1>
+        <a href="home.html" class="text-white">Back to Home</a>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <form id="blogForm" class="p-4 bg-white rounded shadow">
+        <h2 class="text-xl font-semibold mb-4">Create a Blog</h2>
+        <div class="mb-4">
+          <label for="title" class="block text-gray-700">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            class="border border-gray-300 rounded px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="poster" class="block text-gray-700"
+            >Poster Image URL</label
+          >
+          <input
+            type="text"
+            id="poster"
+            name="poster"
+            class="border border-gray-300 rounded px-4 py-2 w-full"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="description" class="block text-gray-700"
+            >Description</label
+          >
+          <textarea
+            id="description"
+            name="description"
+            class="border border-gray-300 rounded px-4 py-2 w-full"
+          ></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="content" class="block text-gray-700">Content</label>
+          <textarea
+            id="content"
+            name="content"
+            class="border border-gray-300 rounded px-4 py-2 w-full"
+          ></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">
+          Add Blog
+        </button>
+      </form>
+    </main>
+
+    <script src="blog.js"></script>
+  </body>
+</html>

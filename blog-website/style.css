@@ -1,0 +1,25 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .blog-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  #addBlogModal {
+    z-index: 9999;
+    display: flex;
+  }
+  
